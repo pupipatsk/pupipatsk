@@ -9,9 +9,7 @@ export default function EducationSection() {
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">Chulalongkorn University</h3>
-            <span className="text-sm text-muted-foreground">
-              2022 - Present
-            </span>
+            <span className="text-sm text-muted-foreground">2022 - 2026</span>
           </div>
           <p className="font-medium">
             Bachelor of Engineering — Computer Engineering Major
