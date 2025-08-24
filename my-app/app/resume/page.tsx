@@ -156,17 +156,63 @@ export default function ResumePage() {
           <div className="space-y-2">
             <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
               <h3 className="font-bold">
+                Quantitative Research Intern — Soberin
+              </h3>
+              <span className="text-sm text-muted-foreground">
+                August 2025 - October 2025
+              </span>
+            </div>
+            <div className="mt-2 flex flex-wrap gap-2">
+              <Badge
+                variant="outline"
+                className="rounded-full font-mono text-sm font-light text-muted-foreground"
+              >
+                Market Microstructure
+              </Badge>
+              <Badge
+                variant="outline"
+                className="rounded-full font-mono text-sm font-light text-muted-foreground"
+              >
+                Cryptocurrency
+              </Badge>
+              <Badge
+                variant="outline"
+                className="rounded-full font-mono text-sm font-light text-muted-foreground"
+              >
+                Quantitative Research
+              </Badge>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+              <h3 className="font-bold">
                 Risk Management Analyst Intern — SCBX
               </h3>
               <span className="text-sm text-muted-foreground">
-                (Upcoming summer internship) May 2025 - July 2025
+                May 2025 - July 2025
               </span>
             </div>
-            <p className="text-muted-foreground">
-              Upcoming internship with one of Thailand's leading financial
-              technology conglomerates. More details to be added upon
-              completion.
-            </p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              <Badge
+                variant="outline"
+                className="rounded-full font-mono text-sm font-light text-muted-foreground"
+              >
+                Enterprise Risk Management
+              </Badge>
+              <Badge
+                variant="outline"
+                className="rounded-full font-mono text-sm font-light text-muted-foreground"
+              >
+                Business Process Improvement
+              </Badge>
+              <Badge
+                variant="outline"
+                className="rounded-full font-mono text-sm font-light text-muted-foreground"
+              >
+                Operational Risk
+              </Badge>
+            </div>
           </div>
 
           <div className="space-y-2">
