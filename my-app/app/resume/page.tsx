@@ -670,6 +670,7 @@ export default function ResumePage() {
       <section className="mb-8">
         <h2 className="mb-4 text-2xl font-bold">Skills & Certifications</h2>
         <div className="grid gap-6 md:grid-cols-2">
+          {/* Technical Skills section */}
           <Card>
             <CardHeader>
               <CardTitle>Technical Skills</CardTitle>
@@ -753,12 +754,29 @@ export default function ResumePage() {
             </CardContent>
           </Card>
 
+          {/* Certifications section */}
           <Card>
             <CardHeader>
               <CardTitle>Certifications</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-6">
+                <li className="space-y-1">
+                  <div className="font-serif font-medium">
+                    Google Business Intelligence Specialization
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    Google (Aug 2025)
+                  </div>
+                </li>
+                <li className="space-y-1">
+                  <div className="font-serif font-medium">
+                    Risk Management Specialization
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    New York Institute of Finance (Jun 2025)
+                  </div>
+                </li>
                 <li className="space-y-1">
                   <div className="font-serif font-medium">
                     Financial Engineering and Risk Management Specialization
