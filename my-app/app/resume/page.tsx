@@ -286,9 +286,16 @@ export default function ResumePage() {
             <div className="space-y-2">
               <div>
                 <h4 className="font-medium">Physics & Mathematics Tutor</h4>
-                <p className="text-sm text-muted-foreground">
-                  Tutored for Physics Olympiad camp and university admissions.
-                </p>
+                <div className="text-sm text-muted-foreground">
+                  Provided Physics and Mathematics lessons for Physics Olympiad
+                  camps, university admissions, and high school preparation.
+                  <ul className="ml-5 list-disc text-sm text-muted-foreground">
+                    <li>
+                      Students admitted to Chulalongkorn University’s Faculty of
+                      Engineering and International School of Engineering (ISE)
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div>
                 <h4 className="font-medium">Photographer</h4>
