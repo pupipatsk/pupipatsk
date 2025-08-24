@@ -57,8 +57,26 @@ export default function ResumePage() {
               </span>
             </div>
             <p className="font-medium">
-              Bachelor of Engineering - Computer Engineering Major
+              Bachelor of Engineering — Computer Engineering Major
             </p>
+            <ul className="mt-2 space-y-1 text-sm text-muted-foreground list-disc list-inside">
+              <li>
+                <span>
+                  <span className="font-serif text-base not-italic text-foreground">
+                    Teaching Assistant
+                  </span>{" "}
+                  - Programming Methodology course
+                </span>
+              </li>
+              <li>
+                <span>
+                  <span className="font-serif text-base not-italic text-foreground">
+                    CU Finance Club
+                  </span>{" "}
+                  - Academic Team
+                </span>
+              </li>
+            </ul>
             {/* <p className="text-muted-foreground">GPA: 3.48</p> */}
             <div className="mt-2 flex flex-wrap gap-2 text-sm text-muted-foreground">
               {[
@@ -88,14 +106,22 @@ export default function ResumePage() {
             </div>
             <p className="font-medium">Science-Mathematics Major</p>
             <p className="text-muted-foreground">GPA: 3.85</p>
-            <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+            <ul className="mt-2 space-y-1 text-sm text-muted-foreground list-disc list-inside">
               <li>
-                • Thailand Physics Olympiad (TPhO): Bronze Medal (19th TPhO),
-                Participated (18th TPhO)
+                <span>
+                  <span className="font-serif text-base not-italic text-foreground">
+                    Thailand Physics Olympiad (TPhO)
+                  </span>{" "}
+                  - Bronze Medal (19th TPhO), Participated (18th TPhO)
+                </span>
               </li>
               <li>
-                • Triam Udom Photo Club (Staff and Member): Captured photos at
-                various school events
+                <span>
+                  <span className="font-serif text-base not-italic text-foreground">
+                    Triam Udom Photo Club
+                  </span>{" "}
+                  - Staff and Member
+                </span>
               </li>
             </ul>
             <div className="mt-2 flex flex-wrap gap-2">
