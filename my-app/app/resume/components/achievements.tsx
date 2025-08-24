@@ -11,19 +11,162 @@ export default function AchievementsSection() {
       <div className="space-y-6">
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">
+              Rotman Market Simulation Challenge x Chulalongkorn 2025
+            </h3>
+            <span className="text-sm text-muted-foreground">
+              July - August 2025
+            </span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Ranked 8th in a global trading simulation hosted by the Rotman
+            School of Management, University of Toronto, in collaboration with
+            the Faculty of Commerce and Accountancy, Chulalongkorn University.
+            Competed in real-time market simulations covering Liability, ETF
+            Arbitrage, and Commodities Trading. Focused on evaluating tender
+            offers, managing liquidity risk, and executing high-pressure trades
+            using the RIT simulator.
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Trading Strategies
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Liquidity Risk Management
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Arbitrage
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Decision-Making
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Financial Analysis
+            </Badge>
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">
+              Fine-Tuning Large Language Diffusion Models for Thai News
+              Summarization
+            </h3>
+            <span className="text-sm text-muted-foreground">
+              March - May 2025
+            </span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Fine-tuned and evaluated a diffusion-based large language model
+            (LLaDA) for Thai news summarization. Leveraged LLM-as-a-Judge
+            (QAG-based) evaluation, compared diffusion against autoregressive
+            models, and analyzed context-length strategies (MapReduce vs
+            Refine).
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Natural Language Processing (NLP)
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Fine-Tuning
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              LangChain
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Model Inference
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Large Language Models (LLM)
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Diffusion Models
+            </Badge>
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">
+              National AI Student Challenge 2025 — AWS Regional LLM League
+            </h3>
+            <span className="text-sm text-muted-foreground">
+              March - May 2025
+            </span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Participated in the National AI Student Challenge 2025 hosted by AI
+            Singapore and Amazon Web Services (AWS), focusing on the development
+            and application of large language models using AWS technologies.
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Amazon Web Services (AWS)
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Large Language Models (LLM)
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Artificial Intelligence (AI)
+            </Badge>
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">CUVI Stock Pitching</h3>
             <span className="text-sm text-muted-foreground">
               March - April 2025
             </span>
           </div>
           <p className="font-medium">⭕ Finalist</p>
-          <ul className="ml-5 list-disc text-sm text-muted-foreground">
-            <li>
-              Conducted equity research and valuation of a SET-listed company;
-              presented investment thesis and risk assessment to a panel of
-              industry professionals and fund managers.
-            </li>
-          </ul>
+          <p className="text-sm text-muted-foreground">
+            Conducted equity research and valuation of a SET-listed company;
+            presented investment thesis and risk assessment to a panel of
+            industry professionals and fund managers.
+          </p>
           <div className="mt-2 flex flex-wrap gap-2">
             <Badge
               variant="outline"
@@ -45,7 +188,6 @@ export default function AchievementsSection() {
             </Badge>
           </div>
         </div>
-
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
@@ -92,7 +234,6 @@ export default function AchievementsSection() {
             </Badge>
           </div>
         </div>
-
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
@@ -130,7 +271,6 @@ export default function AchievementsSection() {
             </Badge>
           </div>
         </div>
-
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
@@ -175,7 +315,6 @@ export default function AchievementsSection() {
             </Badge>
           </div>
         </div>
-
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">Investment Experience</h3>
@@ -217,7 +356,6 @@ export default function AchievementsSection() {
             </Badge>
           </div>
         </div>
-
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">Aihack Thailand 2023 - AI Hackathon</h3>
@@ -248,7 +386,6 @@ export default function AchievementsSection() {
             </Badge>
           </div>
         </div>
-
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
@@ -262,7 +399,7 @@ export default function AchievementsSection() {
                   <span className="font-serif text-base not-italic text-foreground">
                     Intania Case Competition
                   </span>{" "}
-                  — Built UAM strategy using AI/cloud for 200K trips/year goal.
+                  - Built UAM strategy using AI/cloud for 200K trips/year goal.
                 </span>
                 <span className="ml-4 whitespace-nowrap">March 2025</span>
               </div>
@@ -273,7 +410,7 @@ export default function AchievementsSection() {
                   <span className="font-serif text-base not-italic text-foreground">
                     Hult Prize at Chulalongkorn
                   </span>{" "}
-                  — Developed a social enterprise idea aligned with UN SDGs.
+                  - Developed a social enterprise idea aligned with UN SDGs.
                 </span>
                 <span className="ml-4 whitespace-nowrap">2023</span>
               </div>
@@ -284,7 +421,7 @@ export default function AchievementsSection() {
                   <span className="font-serif text-base not-italic text-foreground">
                     Chulalongkorn Case Discovery x Ascend Money
                   </span>{" "}
-                  — Formulated a strategic plan for financial services
+                  - Formulated a strategic plan for financial services
                   application.
                 </span>
                 <span className="ml-4 whitespace-nowrap">2023</span>
@@ -306,7 +443,6 @@ export default function AchievementsSection() {
             </Badge>
           </div>
         </div>
-
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
@@ -327,7 +463,6 @@ export default function AchievementsSection() {
             </Badge>
           </div>
         </div>
-
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
