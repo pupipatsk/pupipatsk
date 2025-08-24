@@ -11,56 +11,17 @@ export default function AchievementsSection() {
       <div className="space-y-6">
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">Aihack Thailand 2023 - AI Hackathon</h3>
-            <span className="text-sm text-muted-foreground">December 2023</span>
-          </div>
-          <p className="font-medium">🏆 1st Prize & Best Performance Prize</p>
-          <p className="text-sm text-muted-foreground">
-            Created a machine learning model to forecast credit default risk.
-          </p>
-          <div className="mt-2 flex flex-wrap gap-2">
-            <Badge
-              variant="outline"
-              className="rounded-full font-mono text-sm font-light text-muted-foreground"
-            >
-              Credit Risk Modeling
-            </Badge>
-            <Badge
-              variant="outline"
-              className="rounded-full font-mono text-sm font-light text-muted-foreground"
-            >
-              Hackathon Winner
-            </Badge>
-            <Badge
-              variant="outline"
-              className="rounded-full font-mono text-sm font-light text-muted-foreground"
-            >
-              Optimization
-            </Badge>
-          </div>
-        </div>
-
-        <div className="space-y-2">
-          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">
-              Stock Return Forecasting with Portfolio Optimization Project
-            </h3>
+            <h3 className="font-bold">CUVI Stock Pitching</h3>
             <span className="text-sm text-muted-foreground">
-              April - May 2024
+              March - April 2025
             </span>
           </div>
+          <p className="font-medium">⭕ Finalist</p>
           <ul className="ml-5 list-disc text-sm text-muted-foreground">
             <li>
-              Developed an alpha factor model to forecast stock returns using
-              classical ML and LSTM networks.
-            </li>
-            <li>
-              Designed and implemented quantitative trading strategies using
-              historical data for backtesting.
-            </li>
-            <li>
-              Integrated portfolio optimization techniques to maximize returns
-              and minimize risks.
+              Conducted equity research and valuation of a SET-listed company;
+              presented investment thesis and risk assessment to a panel of
+              industry professionals and fund managers.
             </li>
           </ul>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -68,99 +29,19 @@ export default function AchievementsSection() {
               variant="outline"
               className="rounded-full font-mono text-sm font-light text-muted-foreground"
             >
-              Quantitative Finance
+              Equity Research
             </Badge>
             <Badge
               variant="outline"
               className="rounded-full font-mono text-sm font-light text-muted-foreground"
             >
-              Factor Modeling
+              Valuation Analysis
             </Badge>
             <Badge
               variant="outline"
               className="rounded-full font-mono text-sm font-light text-muted-foreground"
             >
-              Alpha Modeling
-            </Badge>
-          </div>
-        </div>
-
-        <div className="space-y-2">
-          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">
-              Machine Learning for Fundraising Campaigns — SAS x CBS Hackathon
-              Season 4
-            </h3>
-            <span className="text-sm text-muted-foreground">October 2024</span>
-          </div>
-          <p className="font-medium">🎖️ 4th Place</p>
-          <ul className="ml-5 list-disc text-sm text-muted-foreground">
-            <li>Built a 2-stage ensemble model for targeted donor outreach.</li>
-            <li>
-              Achieved high-precision donor predictions and effective cost
-              management.
-            </li>
-          </ul>
-          <div className="mt-2 flex flex-wrap gap-2">
-            <Badge
-              variant="outline"
-              className="rounded-full font-mono text-sm font-light text-muted-foreground"
-            >
-              Targeted Marketing Models
-            </Badge>
-            <Badge
-              variant="outline"
-              className="rounded-full font-mono text-sm font-light text-muted-foreground"
-            >
-              Ensemble Learning
-            </Badge>
-            <Badge
-              variant="outline"
-              className="rounded-full font-mono text-sm font-light text-muted-foreground"
-            >
-              Cost management
-            </Badge>
-          </div>
-        </div>
-
-        <div className="space-y-2">
-          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">Investment Experience</h3>
-            <span className="text-sm text-muted-foreground">April 2024</span>
-          </div>
-          <ul className="ml-5 list-disc text-sm text-muted-foreground">
-            <li>
-              Managed a self-directed investment portfolio with a TWRR of
-              15.46%, MWRR of 34.34%, and ROI of 14.47%, achieving an AUM of
-              B119,240.51 (as of February 28, 2025).
-            </li>
-            <li>
-              Evaluated risk-adjusted performance, maintaining a Sharpe Ratio of
-              0.54 (ifi ~ 4%, CBOE-10Y-TNX).
-            </li>
-            <li>
-              Monitored portfolio risk, with an MDD of 11.95%, VaR of 3.25%, and
-              CVaR of 4.64%.
-            </li>
-          </ul>
-          <div className="mt-2 flex flex-wrap gap-2">
-            <Badge
-              variant="outline"
-              className="rounded-full font-mono text-sm font-light text-muted-foreground"
-            >
-              Portfolio Management
-            </Badge>
-            <Badge
-              variant="outline"
-              className="rounded-full font-mono text-sm font-light text-muted-foreground"
-            >
-              Risk Metrics
-            </Badge>
-            <Badge
-              variant="outline"
-              className="rounded-full font-mono text-sm font-light text-muted-foreground"
-            >
-              Performance Analytics
+              Investment Thesis
             </Badge>
           </div>
         </div>
@@ -214,17 +95,18 @@ export default function AchievementsSection() {
 
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">CUVI Stock Pitching</h3>
-            <span className="text-sm text-muted-foreground">
-              March - April 2025
-            </span>
+            <h3 className="font-bold">
+              Machine Learning for Fundraising Campaigns — SAS x CBS Hackathon
+              Season 4
+            </h3>
+            <span className="text-sm text-muted-foreground">October 2024</span>
           </div>
-          <p className="font-medium">⭕ Finalist</p>
+          <p className="font-medium">🎖️ 4th Place</p>
           <ul className="ml-5 list-disc text-sm text-muted-foreground">
+            <li>Built a 2-stage ensemble model for targeted donor outreach.</li>
             <li>
-              Conducted equity research and valuation of a SET-listed company;
-              presented investment thesis and risk assessment to a panel of
-              industry professionals and fund managers.
+              Achieved high-precision donor predictions and effective cost
+              management.
             </li>
           </ul>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -232,19 +114,137 @@ export default function AchievementsSection() {
               variant="outline"
               className="rounded-full font-mono text-sm font-light text-muted-foreground"
             >
-              Equity Research
+              Targeted Marketing Models
             </Badge>
             <Badge
               variant="outline"
               className="rounded-full font-mono text-sm font-light text-muted-foreground"
             >
-              Valuation Analysis
+              Ensemble Learning
             </Badge>
             <Badge
               variant="outline"
               className="rounded-full font-mono text-sm font-light text-muted-foreground"
             >
-              Investment Thesis
+              Cost management
+            </Badge>
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">
+              Stock Return Forecasting with Portfolio Optimization Project
+            </h3>
+            <span className="text-sm text-muted-foreground">
+              April - May 2024
+            </span>
+          </div>
+          <ul className="ml-5 list-disc text-sm text-muted-foreground">
+            <li>
+              Developed an alpha factor model to forecast stock returns using
+              classical ML and LSTM networks.
+            </li>
+            <li>
+              Designed and implemented quantitative trading strategies using
+              historical data for backtesting.
+            </li>
+            <li>
+              Integrated portfolio optimization techniques to maximize returns
+              and minimize risks.
+            </li>
+          </ul>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Quantitative Finance
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Factor Modeling
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Alpha Modeling
+            </Badge>
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">Investment Experience</h3>
+            <span className="text-sm text-muted-foreground">April 2024</span>
+          </div>
+          <ul className="ml-5 list-disc text-sm text-muted-foreground">
+            <li>
+              Managed a self-directed investment portfolio with a TWRR of
+              15.46%, MWRR of 34.34%, and ROI of 14.47%, achieving an AUM of
+              B119,240.51 (as of February 28, 2025).
+            </li>
+            <li>
+              Evaluated risk-adjusted performance, maintaining a Sharpe Ratio of
+              0.54 (ifi ~ 4%, CBOE-10Y-TNX).
+            </li>
+            <li>
+              Monitored portfolio risk, with an MDD of 11.95%, VaR of 3.25%, and
+              CVaR of 4.64%.
+            </li>
+          </ul>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Portfolio Management
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Risk Metrics
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Performance Analytics
+            </Badge>
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">Aihack Thailand 2023 - AI Hackathon</h3>
+            <span className="text-sm text-muted-foreground">December 2023</span>
+          </div>
+          <p className="font-medium">🏆 1st Prize & Best Performance Prize</p>
+          <p className="text-sm text-muted-foreground">
+            Created a machine learning model to forecast credit default risk.
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Credit Risk Modeling
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Hackathon Winner
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Optimization
             </Badge>
           </div>
         </div>
