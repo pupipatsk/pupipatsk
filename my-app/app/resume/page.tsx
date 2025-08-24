@@ -745,10 +745,17 @@ export default function ResumePage() {
 
                 <div>
                   <h3 className="font-sans font-medium">Languages</h3>
-                  <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-                    <li>• Thai (Native)</li>
-                    <li>• English</li>
-                  </ul>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {["Thai (Native)", "English"].map((skill) => (
+                      <Badge
+                        key={skill}
+                        variant="outline"
+                        className="rounded-full font-mono text-sm font-light text-muted-foreground"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
                 </div>
               </div>
             </CardContent>
