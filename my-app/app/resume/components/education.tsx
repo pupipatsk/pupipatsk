@@ -34,13 +34,18 @@ export default function EducationSection() {
           </ul>
           <div className="mt-2 flex flex-wrap gap-2 text-sm text-muted-foreground">
             {[
+              "Financial Engineering",
+              "Thai Economy",
+              "Law",
+              "European Union Integration",
               "Pattern Recognition (Deep Learning)",
               "Natural Language Processing Systems (NLP)",
               "Algorithm & Data Structures",
               "Database Systems",
               "Optimization",
               "Statistics",
-              "Signal Processing",
+              "Linear Algebra",
+              "Software Engineering",
             ].map((course) => (
               <Badge
                 key={course}

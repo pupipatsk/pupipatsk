@@ -28,16 +28,16 @@ const languages = ["Thai (Native)", "English"];
 const certifications = [
   {
     title: "LangChain Academy",
-    issuer: "",
-    date: "",
+    issuer: "LangChain",
+    date: "October 2025",
     details: [
       {
         title: "Project: Deep Research with LangGraph",
-        date: "October 2025",
+        date: "",
       },
       {
         title: "Foundation: Introduction to LangGraph",
-        date: "October 2025",
+        date: "",
       },
     ],
   },
