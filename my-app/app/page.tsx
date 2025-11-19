@@ -10,7 +10,7 @@ export default function Home() {
       <section className="py-20 md:py-28">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_450px]">
-            <div className="flex flex-col justify-center space-y-4 mx-auto lg:ml-16 lg:mx-0">
+            <div className="order-2 flex flex-col justify-center space-y-4 mx-auto lg:ml-16 lg:mx-0 lg:order-1">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Pupipat Singkhorn
@@ -38,7 +38,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="aspect-square overflow-hidden rounded-full border border-border mx-auto lg:mr-16 lg:mx-0">
+            <div className="order-1 aspect-square overflow-hidden rounded-full border border-border mx-auto lg:mr-16 lg:mx-0 lg:order-2">
               <Image
                 src="/profile/profile-photo.png"
                 width={450}
