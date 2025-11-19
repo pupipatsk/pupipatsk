@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-3 sm:px-0 pointer-events-none">
-      <nav className="pointer-events-auto flex items-center gap-1 rounded-full border border-border/40 bg-background/80 px-1 py-1 shadow-sm backdrop-blur-md supports-backdrop-filter:bg-background/60 sm:px-3 sm:py-1.5 max-sm:w-full max-sm:max-w-full max-sm:justify-start max-sm:overflow-x-auto sm:justify-center">
+      <nav className="pointer-events-auto flex items-center gap-1 rounded-full border border-border/40 bg-background/80 px-2 py-1 shadow-sm backdrop-blur-md supports-backdrop-filter:bg-background/60 sm:px-3 sm:py-1.5 justify-center max-sm:overflow-x-auto">
         {navItems.map((item) => {
           const isActive = pathname === item.path;
           return (
