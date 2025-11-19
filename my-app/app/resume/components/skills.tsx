@@ -99,7 +99,7 @@ export default function SkillsSection() {
 
         <div className="space-y-3">
           <h3 className="font-bold text-xl">Certifications</h3>
-          <ul className="space-y-6">
+          <ul className="space-y-4">
             {certifications.map((cert) => (
               <li key={cert.title} className="space-y-1">
                 <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
