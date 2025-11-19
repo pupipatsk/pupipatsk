@@ -9,8 +9,18 @@ export default function WorkExperienceSection() {
       <div className="space-y-6">
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">
-              Quantitative Research Intern — Soberin
+            <h3 className="font-bold flex flex-wrap items-center gap-2">
+              <span>Quantitative Research Intern — Soberin</span>
+              <Link
+                href="https://soberin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-foreground underline-offset-4 hover:underline"
+              >
+                <span className="text-sm text-muted-foreground font-sans font-extralight">
+                  soberin.com
+                </span>
+              </Link>
             </h3>
             <span className="text-sm text-muted-foreground">
               August 2025 - October 2025
@@ -40,7 +50,19 @@ export default function WorkExperienceSection() {
 
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">Risk Management Analyst Intern — SCBX</h3>
+            <h3 className="font-bold flex flex-wrap items-center gap-2">
+              <span>Risk Management Analyst Intern — SCBX</span>
+              <Link
+                href="https://www.scbx.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-foreground underline-offset-4 hover:underline"
+              >
+                <span className="text-sm text-muted-foreground font-sans font-extralight">
+                  scbx.com
+                </span>
+              </Link>
+            </h3>
             <span className="text-sm text-muted-foreground">
               May 2025 - July 2025
             </span>
@@ -69,8 +91,18 @@ export default function WorkExperienceSection() {
 
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">
-              Data Scientist Intern — Kiatnakin Phatra Bank
+            <h3 className="font-bold flex flex-wrap items-center gap-2">
+              <span>Data Scientist Intern — Kiatnakin Phatra Bank</span>
+              <Link
+                href="https://bank.kkpfg.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-foreground underline-offset-4 hover:underline"
+              >
+                <span className="text-sm text-muted-foreground font-sans font-extralight">
+                  kkpfg.com
+                </span>
+              </Link>
             </h3>
             <span className="text-sm text-muted-foreground">
               June 2024 - July 2024

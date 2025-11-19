@@ -1,50 +1,38 @@
-import Link from "next/link"
-import { Github, Linkedin, Mail } from "lucide-react"
+import Link from "next/link";
+import { Mail } from "lucide-react";
+import { GithubIcon } from "@/components/icons/github-icon";
+import { LinkedinIcon } from "@/components/icons/linkedin-icon";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border py-6 md:py-0">
-      <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-        <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Pupipat Singkhorn. All rights reserved.
-        </p>
-        <div className="flex items-center gap-4">
-          <Link
-            href="https://github.com/pupipatsk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="GitHub"
-          >
-            <Github className="h-5 w-5" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/pupipatsk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="h-5 w-5" />
-          </Link>
-          {/* <Link
-            href="https://www.instagram.com/pupick.sk/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="Instagram"
-          >
-            <Instagram className="h-5 w-5" />
-          </Link> */}
-          <Link
-            href="mailto:pupipat.sk@gmail.com"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="Email"
-          >
-            <Mail className="h-5 w-5" />
-          </Link>
+    <footer className="py-12">
+      <div className="flex justify-center px-4 pointer-events-none">
+        <div className="pointer-events-auto flex w-full max-w-5xl flex-col items-center gap-4 rounded-full border border-border/40 bg-background/80 px-5 py-4 shadow-sm backdrop-blur-md supports-backdrop-filter:bg-background/60 sm:flex-row sm:justify-between sm:gap-6">
+          <div className="flex items-center gap-4">
+            <Link
+              href="https://github.com/pupipatsk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="GitHub"
+            >
+              <GithubIcon className="h-5 w-5" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/pupipatsk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="LinkedIn"
+            >
+              <LinkedinIcon className="h-5 w-5" />
+            </Link>
+          </div>
+          <p className="text-sm text-muted-foreground text-center sm:text-left">
+            © 2025 Pupipat Singkhorn. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

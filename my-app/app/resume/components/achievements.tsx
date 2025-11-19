@@ -9,6 +9,67 @@ export default function AchievementsSection() {
         Extracurricular Activities & Achievements
       </h2>
       <div className="space-y-6">
+        {/* seperate */}
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">
+              Volunteer Staff — International Collegiate Programming Contest
+              (ICPC)
+            </h3>
+            <span className="text-sm text-muted-foreground">
+              October - November 2025
+            </span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Assisted in organizing and running the 2025 ICPC Asia Bangkok
+            Regional Contest.
+          </p>
+        </div>
+        {/* seperate */}
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">GrabSparks 2025 - Grab</h3>
+            <span className="text-sm text-muted-foreground">October 2025</span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Participated in GrabSparks 2025, an annual national business and
+            data case competition organized by Grab, tackling real-world
+            challenges.
+          </p>
+        </div>
+        {/* seperate */}
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">TBS Stock Pitch</h3>
+            <span className="text-sm text-muted-foreground">October 2025</span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Conducted equity research and valuation of an S&P 500-listed company
+            for the Thammasat Business School (TBS) Stock Pitch 2025
+            competition.
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Equity Research
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Valuation Analysis
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Investment Thesis
+            </Badge>
+          </div>
+        </div>
+        {/* seperate */}
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
@@ -156,7 +217,7 @@ export default function AchievementsSection() {
 
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">CUVI Stock Pitching</h3>
+            <h3 className="font-bold">CUVI Stock Pitch</h3>
             <span className="text-sm text-muted-foreground">
               March - April 2025
             </span>
@@ -188,6 +249,7 @@ export default function AchievementsSection() {
             </Badge>
           </div>
         </div>
+
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">

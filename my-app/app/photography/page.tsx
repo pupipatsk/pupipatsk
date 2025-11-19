@@ -114,7 +114,7 @@ export default function PhotographyPage() {
         ))}
       </Tabs>
 
-      <Card className="mt-12">
+      <Card className="mt-12 bg-neutral-50 border-0 shadow-none">
         <CardHeader>
           <CardTitle>Photography Experience</CardTitle>
           <CardDescription>My background in photography</CardDescription>
@@ -153,12 +153,6 @@ export default function PhotographyPage() {
               <Instagram className="mr-2 h-4 w-4" /> DM me on Instagram
             </Link>
           </Button>
-          {/* <Button asChild variant="secondary">
-            <Link href="mailto:pupipat.sk@gmail.com">
-              <Mail className="mr-2 h-4 w-4" />
-              Email
-            </Link>
-          </Button> */}
         </CardFooter>
       </Card>
       {selectedPhoto && (

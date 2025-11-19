@@ -2,12 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ModeToggle } from "./mode-toggle";
 import { cn } from "@/lib/utils";
-import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { UserRound } from "lucide-react";
+
 export default function Navbar() {
   const pathname = usePathname();
 
@@ -15,70 +11,33 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "Resume", path: "/resume" },
     { name: "Photography", path: "/photography" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
-    <header className="border-b border-border">
-      <div className="container flex h-16 items-center justify-between">
-        <Link
-          href="/"
-          className="flex items-center gap-2 font-serif text-xl"
-        >
-          <UserRound className="w-5 h-5"/> pupipat.sk
-        </Link>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
-          <div className="flex gap-6">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                href={item.path}
-                className={cn(
-                  "text-sm transition-colors hover:text-foreground/80",
-                  pathname === item.path
-                    ? "text-foreground font-medium"
-                    : "text-foreground/60"
-                )}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
-          <ModeToggle />
-        </nav>
-
-        {/* Mobile Navigation */}
-        <div className="flex items-center md:hidden">
-          <ModeToggle />
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="ml-2">
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Toggle menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent>
-              <div className="flex flex-col gap-4 mt-8">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.path}
-                    href={item.path}
-                    className={cn(
-                      "text-base transition-colors hover:text-foreground/80 py-2",
-                      pathname === item.path
-                        ? "text-foreground font-medium"
-                        : "text-foreground/60"
-                    )}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
-      </div>
-    </header>
+    <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-3 sm:px-0 pointer-events-none">
+      <nav className="pointer-events-auto flex items-center gap-1 rounded-full border border-border/40 bg-background/80 px-2 py-1 shadow-sm backdrop-blur-md supports-backdrop-filter:bg-background/60 sm:px-3 sm:py-1.5 justify-center max-sm:overflow-x-auto">
+        {navItems.map((item) => {
+          const isActive = pathname === item.path;
+          return (
+            <Link
+              key={item.path}
+              href={item.path}
+              className={cn(
+                "relative whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition-colors hover:text-foreground sm:px-4",
+                isActive
+                  ? "text-foreground"
+                  : "text-muted-foreground hover:bg-muted/50"
+              )}
+            >
+              {isActive && (
+                <span className="absolute inset-0 -z-10 rounded-full bg-muted" />
+              )}
+              {item.name}
+            </Link>
+          );
+        })}
+      </nav>
+    </div>
   );
 }
