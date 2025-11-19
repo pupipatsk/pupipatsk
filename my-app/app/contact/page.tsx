@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { GithubIcon } from "@/components/icons/github-icon";
 import { LinkedinIcon } from "@/components/icons/linkedin-icon";
-
+import { Copy } from "lucide-react";
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
   const emailAddress = "pupipat.sk@gmail.com";
@@ -42,7 +42,13 @@ export default function ContactPage() {
             onClick={handleCopyEmail}
             aria-label="Copy email address"
           >
-            {copied ? "Copied!" : "Copy Email"}
+            {copied ? (
+              "Copied!"
+            ) : (
+              <>
+                <Copy className="ml-2 h-4 w-4" /> Copy Email
+              </>
+            )}
           </Button>
           <Button variant="outline" asChild>
             <Link

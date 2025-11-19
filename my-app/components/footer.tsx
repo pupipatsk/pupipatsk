@@ -29,22 +29,6 @@ export default function Footer() {
           >
             <LinkedinIcon className="h-5 w-5" />
           </Link>
-          {/* <Link
-            href="https://www.instagram.com/pupick.sk/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="Instagram"
-          >
-            <Instagram className="h-5 w-5" />
-          </Link> */}
-          <Link
-            href="mailto:pupipat.sk@gmail.com"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="Email"
-          >
-            <Mail className="h-5 w-5" />
-          </Link>
         </div>
       </div>
     </footer>
