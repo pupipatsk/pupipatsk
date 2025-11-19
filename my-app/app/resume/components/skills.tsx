@@ -21,7 +21,14 @@ const librariesAndTools = [
   "Streamlit",
 ];
 
-const applications = ["Excel", "Power BI", "Tableau", "Git", "GitHub"];
+const applications = [
+  "Excel",
+  "Power BI",
+  "Tableau",
+  "Git",
+  "GitHub",
+  "Bloomberg Terminal",
+];
 
 const languages = ["Thai (Native)", "English"];
 
