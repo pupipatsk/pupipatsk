@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ModeToggle } from "./mode-toggle";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -45,12 +44,10 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-          <ModeToggle />
         </nav>
 
         {/* Mobile Navigation */}
         <div className="flex items-center md:hidden">
-          <ModeToggle />
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="ml-2">
