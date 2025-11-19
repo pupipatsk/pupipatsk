@@ -12,6 +12,22 @@ export default function AchievementsSection() {
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
+              Volunteer Staff — International Collegiate Programming Contest
+              (ICPC)
+            </h3>
+            <span className="text-sm text-muted-foreground">
+              October - November 2025
+            </span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Assisted in organizing and running the 2025 ICPC Asia Bangkok
+            Regional Contest.
+          </p>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">
               Rotman Market Simulation Challenge x Chulalongkorn 2025
             </h3>
             <span className="text-sm text-muted-foreground">
