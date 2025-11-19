@@ -28,6 +28,18 @@ export default function AchievementsSection() {
         {/* seperate */}
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">GrabSparks 2025 - Grab</h3>
+            <span className="text-sm text-muted-foreground">October 2025</span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Participated in GrabSparks 2025, an annual national business and
+            data case competition organized by Grab, tackling real-world
+            challenges.
+          </p>
+        </div>
+        {/* seperate */}
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">TBS Stock Pitch</h3>
             <span className="text-sm text-muted-foreground">October 2025</span>
           </div>
