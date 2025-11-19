@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Linkedin, Github } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -47,45 +47,6 @@ export default function Home() {
                 className="object-cover"
                 priority
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="border-t border-border py-12 md:py-16">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="font-sans font-semibold text-2xl tracking-tighter sm:text-3xl">
-                Get in Touch
-              </h2>
-              <p className="max-w-[600px] text-muted-foreground">
-                Interested in working together or have any questions?
-              </p>
-            </div>
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <Button asChild>
-                <Link href="mailto:pupipat.sk@gmail.com">Email Me</Link>
-              </Button>
-              <Button variant="outline" asChild>
-                <Link
-                  href="https://www.linkedin.com/in/pupipatsk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
-                </Link>
-              </Button>
-              <Button variant="outline" asChild>
-                <Link
-                  href="https://github.com/pupipatsk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github className="mr-2 h-4 w-4" /> GitHub
-                </Link>
-              </Button>
             </div>
           </div>
         </div>
