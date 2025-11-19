@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { GithubIcon } from "@/components/icons/github-icon";
+import { LinkedinIcon } from "@/components/icons/linkedin-icon";
 
 export default function Footer() {
   return (
@@ -26,7 +27,7 @@ export default function Footer() {
             className="text-muted-foreground hover:text-foreground transition-colors"
             aria-label="LinkedIn"
           >
-            <Linkedin className="h-5 w-5" />
+            <LinkedinIcon className="h-5 w-5" />
           </Link>
           {/* <Link
             href="https://www.instagram.com/pupick.sk/"

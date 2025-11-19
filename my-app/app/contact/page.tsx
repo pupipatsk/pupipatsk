@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Linkedin } from "lucide-react";
 import { GithubIcon } from "@/components/icons/github-icon";
+import { LinkedinIcon } from "@/components/icons/linkedin-icon";
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
@@ -50,7 +50,7 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
+              <LinkedinIcon className="mr-2 h-4 w-4" /> LinkedIn
             </Link>
           </Button>
           <Button variant="outline" asChild>
