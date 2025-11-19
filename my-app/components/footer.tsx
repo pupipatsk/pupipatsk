@@ -1,5 +1,6 @@
-import Link from "next/link"
-import { Github, Linkedin, Mail } from "lucide-react"
+import Link from "next/link";
+import { Linkedin, Mail } from "lucide-react";
+import { GithubIcon } from "@/components/icons/github-icon";
 
 export default function Footer() {
   return (
@@ -16,7 +17,7 @@ export default function Footer() {
             className="text-muted-foreground hover:text-foreground transition-colors"
             aria-label="GitHub"
           >
-            <Github className="h-5 w-5" />
+            <GithubIcon className="h-5 w-5" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/pupipatsk"
@@ -46,5 +47,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

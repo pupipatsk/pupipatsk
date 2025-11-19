@@ -1,8 +1,30 @@
-import Link from "next/link";
+"use client";
+
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Linkedin, Github } from "lucide-react";
+import Link from "next/link";
+import { Linkedin } from "lucide-react";
+import { GithubIcon } from "@/components/icons/github-icon";
 
 export default function ContactPage() {
+  const [copied, setCopied] = useState(false);
+  const emailAddress = "pupipat.sk@gmail.com";
+
+  useEffect(() => {
+    if (!copied) return;
+    const timeout = setTimeout(() => setCopied(false), 2000);
+    return () => clearTimeout(timeout);
+  }, [copied]);
+
+  async function handleCopyEmail() {
+    try {
+      await navigator.clipboard.writeText(emailAddress);
+      setCopied(true);
+    } catch (error) {
+      console.error("Failed to copy email address:", error);
+    }
+  }
+
   return (
     <div className="container px-4 md:px-6 py-12 md:py-24">
       <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -15,8 +37,12 @@ export default function ContactPage() {
           </p>
         </div>
         <div className="flex flex-col gap-4 sm:flex-row pt-8">
-          <Button asChild>
-            <Link href="mailto:pupipat.sk@gmail.com">Email Me</Link>
+          <Button
+            variant="outline"
+            onClick={handleCopyEmail}
+            aria-label="Copy email address"
+          >
+            {copied ? "Copied!" : "Copy Email"}
           </Button>
           <Button variant="outline" asChild>
             <Link
@@ -33,7 +59,7 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github className="mr-2 h-4 w-4" /> GitHub
+              <GithubIcon className="mr-2 h-4 w-4" /> GitHub
             </Link>
           </Button>
         </div>
@@ -41,4 +67,3 @@ export default function ContactPage() {
     </div>
   );
 }
-
