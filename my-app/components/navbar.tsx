@@ -11,6 +11,7 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "Resume", path: "/resume" },
     { name: "Photography", path: "/photography" },
+    { name: "Tutoring", path: "/tutoring" },
     { name: "Contact", path: "/contact" },
   ];
 
