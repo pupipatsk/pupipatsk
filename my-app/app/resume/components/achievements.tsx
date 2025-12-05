@@ -28,18 +28,6 @@ export default function AchievementsSection() {
         {/* seperate */}
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">GrabSparks 2025 - Grab</h3>
-            <span className="text-sm text-muted-foreground">October 2025</span>
-          </div>
-          <p className="text-sm text-muted-foreground">
-            Participated in GrabSparks 2025, an annual national business and
-            data case competition organized by Grab, tackling real-world
-            challenges.
-          </p>
-        </div>
-        {/* seperate */}
-        <div className="space-y-2">
-          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">TBS Stock Pitch</h3>
             <span className="text-sm text-muted-foreground">October 2025</span>
           </div>
@@ -455,6 +443,17 @@ export default function AchievementsSection() {
             </h3>
           </div>
           <ul className="ml-5 list-disc text-sm text-muted-foreground">
+            <li>
+              <div className="flex justify-between">
+                <span>
+                  <span className="font-serif text-base not-italic text-foreground">
+                    GrabSparks 2025, Grab
+                  </span>{" "}
+                  - Next frontier strategies for thriving in a shifting economy.
+                </span>
+                <span className="ml-4 whitespace-nowrap">October 2025</span>
+              </div>
+            </li>
             <li>
               <div className="flex justify-between">
                 <span>
