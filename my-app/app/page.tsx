@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 md:py-28">
+      <section className="pt-16 pb-12 md:py-28">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_450px]">
             <div className="order-2 flex flex-col justify-center space-y-4 mx-auto lg:ml-16 lg:mx-0 lg:order-1">
