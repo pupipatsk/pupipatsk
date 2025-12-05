@@ -28,7 +28,7 @@ export function TrustedCarousel() {
                 playOnInit: true,
                 stopOnInteraction: false,
                 stopOnMouseEnter: false,
-                speed: 0.3,
+                speed: 1,
             }),
         ]
     )
