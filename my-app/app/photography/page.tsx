@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
   Card,
   CardContent,
@@ -21,7 +22,7 @@ export default function PhotographyPage() {
   const [loadedPhotos, setLoadedPhotos] = useState<Record<number, boolean>>({});
   // Photography categories
   const categories = [
-    { id: "all", name: "All Work" },
+    { id: "all", name: "All" },
     { id: "events", name: "Events" },
     { id: "street", name: "Street" },
     { id: "landscape", name: "Landscape" },
@@ -30,37 +31,46 @@ export default function PhotographyPage() {
 
   // Photography items (placeholder data)
   const photos = [
-    { id: 4, title: "", category: "landscape", src: "/photography/lnd-1.jpg" },
+    { id: 1, title: "", category: "landscape", src: "/photography/lnd-1.jpg" },
     { id: 2, title: "", category: "events", src: "/photography/evt-1.jpg" },
     { id: 3, title: "", category: "portrait", src: "/photography/ptr-1.jpg" },
-    { id: 1, title: "", category: "street", src: "/photography/st-2.jpg" },
-    { id: 5, title: "", category: "events", src: "/photography/evt-3.jpg" },
-    { id: 6, title: "", category: "landscape", src: "/photography/lnd-2.jpg" },
+    { id: 4, title: "", category: "street", src: "/photography/st-2.jpg" },
+    { id: 5, title: "", category: "street", src: "/photography/st-3.jpg" },
+    { id: 6, title: "", category: "events", src: "/photography/evt-3.jpg" },
+    { id: 7, title: "", category: "landscape", src: "/photography/lnd-2.jpg" },
+    { id: 8, title: "", category: "portrait", src: "/photography/ptr-3.jpg" },
   ];
 
   return (
     <div className="container py-12">
-      <div className="mb-8 space-y-2">
+      <div className="mb-8 space-y-2 text-center">
         <h1 className="text-3xl font-bold">Photography Portfolio</h1>
-        <p className="text-muted-foreground">
-          A selection of my photographic work
-        </p>
-        <div className="mt-4">
-          <Link
-            href="https://www.instagram.com/pupick.sk/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-sm hover:text-foreground"
-          >
-            <Instagram className="mr-2 h-4 w-4" />
-            Follow me on Instagram
-            <span>&nbsp;</span>
-            <span className="font-semibold">@pupick.sk</span>
-            <ExternalLink className="ml-1 h-3 w-3" />
-          </Link>
+        <div className="mt-4 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-center">
+          <div className="inline-flex items-center h-11 rounded-full bg-secondary/30 border border-border/50 pl-1 pr-4 gap-3">
+            <div className="flex items-center gap-2 px-3 h-9 rounded-full bg-background/50 text-sm font-medium text-muted-foreground">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              Opening for Work
+            </div>
+            <div className="h-5 w-px bg-border/50" />
+            <div
+              className="flex items-center gap-2 cursor-pointer group text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() =>
+                window.open("https://www.instagram.com/pupick.sk/", "_blank")
+              }
+            >
+              <Instagram className="h-4 w-4" />
+              <span className="font-mono text-sm">@pupick.sk</span>
+              <ExternalLink className="h-3 w-3 opacity-50 group-hover:opacity-100 transition-opacity" />
+            </div>
+          </div>
         </div>
       </div>
-
+      <p className="text-muted-foreground font-mono mb-4">
+        A selection of my photographic work
+      </p>
       <Tabs defaultValue="all" className="mb-8">
         <div className="mb-6 overflow-x-auto">
           <TabsList className="inline-flex whitespace-nowrap justify-start">
@@ -114,47 +124,6 @@ export default function PhotographyPage() {
         ))}
       </Tabs>
 
-      <Card className="mt-12 bg-neutral-50 border-0 shadow-none">
-        <CardHeader>
-          <CardTitle>Photography Experience</CardTitle>
-          <CardDescription>My background in photography</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-4">
-            <p className="text-muted-foreground">
-              My photography journey began during my time at Triam Udom Suksa
-              School, where I was an active member and staff of the Triam Udom
-              Photo Club. I captured photos at various school events, developing
-              my skills in event and portrait photography.
-            </p>
-            <p className="text-muted-foreground">
-              Since then, I've continued to pursue photography as a freelancer,
-              working on various projects including:
-            </p>
-            <ul className="ml-5 list-disc text-muted-foreground">
-              <li>Portrait sessions for individuals and groups</li>
-              <li>Event photography</li>
-              <li>Landscape photography during travels</li>
-            </ul>
-            <p className="font-medium">Interested in working together?</p>
-            <p className="text-muted-foreground">
-              I'm available for photography projects and collaborations. Feel
-              free to reach out to discuss your needs.
-            </p>
-          </div>
-        </CardContent>
-        <CardFooter className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-start">
-          <Button asChild>
-            <Link
-              href="https://www.instagram.com/pupick.sk/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Instagram className="mr-2 h-4 w-4" /> DM me on Instagram
-            </Link>
-          </Button>
-        </CardFooter>
-      </Card>
       {selectedPhoto && (
         <div
           className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"
