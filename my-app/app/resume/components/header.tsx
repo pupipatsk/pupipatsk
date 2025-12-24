@@ -11,25 +11,6 @@ export default function ResumeHeader() {
           <span>📧 pupipat.sk@gmail.com</span>
           <span>📍 Bangkok, Thailand</span>
         </div>
-        <div className="mt-2 flex flex-wrap gap-2">
-          <Link
-            href="https://www.linkedin.com/in/pupipatsk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
-          >
-            LinkedIn <ExternalLink className="ml-1 h-3 w-3" />
-          </Link>
-          <span className="text-muted-foreground">•</span>
-          <Link
-            href="https://github.com/pupipatsk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
-          >
-            GitHub <ExternalLink className="ml-1 h-3 w-3" />
-          </Link>
-        </div>
       </div>
       <Button variant="outline" className="shrink-0" asChild>
         <Link href="/files/resume.pdf" download>
