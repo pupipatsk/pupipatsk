@@ -8,6 +8,7 @@ const programmingLanguages = [
   "HTML",
   "CSS",
   "LaTeX",
+  "MATLAB",
   "Markdown",
 ];
 
