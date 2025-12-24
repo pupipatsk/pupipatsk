@@ -9,7 +9,6 @@ export default function ResumeHeader() {
         <h1 className="text-3xl font-bold">Pupipat Singkhorn</h1>
         <div className="mt-2 flex flex-col space-y-1 text-muted-foreground sm:flex-row sm:items-center sm:space-x-4 sm:space-y-0">
           <span>📧 pupipat.sk@gmail.com</span>
-          <span className="hidden sm:inline">•</span>
           <span>📍 Bangkok, Thailand</span>
         </div>
         <div className="mt-2 flex flex-wrap gap-2">
