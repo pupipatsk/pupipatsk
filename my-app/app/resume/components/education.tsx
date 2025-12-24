@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { ExternalLink } from "lucide-react";
 
 export default function EducationSection() {
   return (
@@ -98,7 +99,7 @@ export default function EducationSection() {
                 variant="secondary"
                 className="rounded-full font-mono text-sm font-light text-muted-foreground"
               >
-                Photography
+                Photography <ExternalLink className="ml-1 h-3 w-3" />
               </Badge>
             </Link>
           </div>
