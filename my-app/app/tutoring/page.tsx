@@ -1,10 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, GraduationCap, School, BookOpen } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { TrustedCarousel } from "@/app/tutoring/components/trusted-carousel";
-import { SkillTree } from "@/app/tutoring/components/skill-tree";
 import { CopyEmail } from "@/app/tutoring/components/copy-email";
 
 export default function TutoringPage() {
