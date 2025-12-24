@@ -76,7 +76,7 @@ export default function WorkExperienceSection() {
                     href="https://www.scbx.com/th/team-and-activity/life-at-scbx-internship/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline underline-offset-4 hover:text-foreground"
+                    className="inline-flex items-center gap-1 text-foreground underline-offset-4 hover:underline"
                   >
                     Life at SCBX Internship: Every Intern Leaves Something That
                     Matters.
