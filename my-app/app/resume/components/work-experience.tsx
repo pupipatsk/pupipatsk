@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Instagram } from "lucide-react";
 
 export default function WorkExperienceSection() {
   return (
@@ -66,6 +66,24 @@ export default function WorkExperienceSection() {
             <span className="text-sm text-muted-foreground">
               May 2025 - July 2025
             </span>
+          </div>
+          <div className="space-y-2">
+            <div>
+              <h4 className="font-medium">Article on scbx.com</h4>
+              <ul className="ml-5 my-1 list-disc text-sm text-muted-foreground">
+                <li>
+                  <Link
+                    href="https://www.scbx.com/th/team-and-activity/life-at-scbx-internship/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-4 hover:text-foreground"
+                  >
+                    Life at SCBX Internship: Every Intern Leaves Something That
+                    Matters.
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="mt-2 flex flex-wrap gap-2">
             <Badge
@@ -171,27 +189,51 @@ export default function WorkExperienceSection() {
               <div className="text-sm text-muted-foreground">
                 Provided Physics and Mathematics lessons for Physics Olympiad
                 camps, university admissions, and high school preparation.
-                <ul className="ml-5 list-disc text-sm text-muted-foreground">
-                  <li>
-                    Students admitted to Chulalongkorn University's Faculty of
-                    Engineering and International School of Engineering (ISE)
-                  </li>
-                </ul>
+              </div>
+              <div className="mt-2 flex flex-wrap gap-2">
+                <Link
+                  href="./tutoring"
+                  className="rounded-full font-mono text-sm font-light text-muted-foreground"
+                >
+                  <Badge
+                    variant="secondary"
+                    className="rounded-full font-mono text-sm font-light text-muted-foreground"
+                  >
+                    Tutoring <ExternalLink className="ml-1 h-3 w-3" />
+                  </Badge>
+                </Link>
               </div>
             </div>
-            <div>
+            <div className="mt-4">
               <h4 className="font-medium">Photographer</h4>
               <p className="text-sm text-muted-foreground">
                 Photographed various events and private sessions.
+              </p>
+              <div className="mt-2 flex flex-wrap gap-2">
                 <Link
                   href="https://www.instagram.com/pupick.sk/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-1 inline-flex items-center text-sm hover:text-foreground"
                 >
-                  Instagram Portfolio <ExternalLink className="ml-1 h-3 w-3" />
+                  <Badge
+                    variant="secondary"
+                    className="rounded-full font-mono text-sm font-light text-muted-foreground hover:text-foreground"
+                  >
+                    <Instagram className="mr-1 h-3 w-3" /> pupick.sk
+                  </Badge>
                 </Link>
-              </p>
+                <Link
+                  href="./photography"
+                  className="rounded-full font-mono text-sm font-light text-muted-foreground"
+                >
+                  <Badge
+                    variant="secondary"
+                    className="rounded-full font-mono text-sm font-light text-muted-foreground"
+                  >
+                    Photography <ExternalLink className="ml-1 h-3 w-3" />
+                  </Badge>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

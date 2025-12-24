@@ -13,6 +13,50 @@ export default function AchievementsSection() {
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
+              Weather Derivative Pricing & Hedging Simulation
+            </h3>
+            <span className="text-sm text-muted-foreground">
+              November - December 2025
+            </span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Developed a quantitative framework in MATLAB to price weather
+            derivatives (CDD/HDD options) using an Ornstein-Uhlenbeck process,
+            Monte Carlo simulation (Euler-Maruyama scheme), and sensitivity
+            analysis (Vega) to evaluate temperature volatility hedging for a
+            Financial Engineering class project.
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Quantitative Financial Modeling
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Stochastic Processes
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              Derivative Pricing
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              MATLAB
+            </Badge>
+          </div>
+        </div>
+        {/* seperate */}
+        <div className="space-y-2">
+          <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
+            <h3 className="font-bold">
               Volunteer Staff — International Collegiate Programming Contest
               (ICPC)
             </h3>
@@ -28,13 +72,14 @@ export default function AchievementsSection() {
         {/* seperate */}
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
-            <h3 className="font-bold">TBS Stock Pitch</h3>
+            <h3 className="font-bold">
+              Amazon (AMZN) Equity Research — TBS Stock Pitch 2025
+            </h3>
             <span className="text-sm text-muted-foreground">October 2025</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            Conducted equity research and valuation of an S&P 500-listed company
-            for the Thammasat Business School (TBS) Stock Pitch 2025
-            competition.
+            Conducted equity research for Amazon (NASDAQ: AMZN) for the
+            Thammasat Business School (TBS) Stock Pitch 2025 competition.
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
             <Badge
@@ -61,7 +106,7 @@ export default function AchievementsSection() {
         <div className="space-y-2">
           <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
             <h3 className="font-bold">
-              Rotman Market Simulation Challenge x Chulalongkorn 2025
+              Trading Competition — Rotman x CBS 2025
             </h3>
             <span className="text-sm text-muted-foreground">
               July - August 2025
@@ -280,7 +325,13 @@ export default function AchievementsSection() {
               variant="outline"
               className="rounded-full font-mono text-sm font-light text-muted-foreground"
             >
-              LLM + OCR
+              LLM
+            </Badge>
+            <Badge
+              variant="outline"
+              className="rounded-full font-mono text-sm font-light text-muted-foreground"
+            >
+              OCR
             </Badge>
           </div>
         </div>

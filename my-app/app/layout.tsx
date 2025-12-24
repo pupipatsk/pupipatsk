@@ -1,5 +1,5 @@
 import type React from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Libre_Caslon_Text, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
@@ -27,9 +27,53 @@ const monoFont = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pupipat Singkhorn | Portfolio",
-  description:
-    "Personal portfolio of Pupipat Singkhorn - Computer Engineering Student and Data Scientist",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+  ),
+  title: {
+    default: "pupipat.com",
+    template: "%s | Pupipat Singkhorn",
+  },
+  description: "Personal website of Pupipat Singkhorn",
+  keywords: ["Pupipat Singkhorn", "pupipat.com"],
+  authors: [{ name: "Pupipat Singkhorn" }],
+  creator: "Pupipat Singkhorn",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "pupipat.com",
+    title: "pupipat.com",
+    description: "Personal website of Pupipat Singkhorn",
+    images: [
+      {
+        url: "/profile/profile-photo.png",
+        width: 1200,
+        height: 1200,
+        alt: "Pupipat Singkhorn",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "pupipat.com",
+    description: "Personal website of Pupipat Singkhorn",
+    images: ["/profile/profile-photo.png"],
+  },
+  icons: {
+    icon: "/profile/profile-photo.png",
+    shortcut: "/profile/profile-photo.png",
+    apple: "/profile/profile-photo.png",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
 };
 
 export default function RootLayout({
