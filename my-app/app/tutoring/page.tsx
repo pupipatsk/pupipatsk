@@ -3,16 +3,16 @@
 import { motion } from "framer-motion";
 import { ArrowRight, GraduationCap, School, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { TrustedCarousel } from "@/components/tutoring/trusted-carousel";
-import { SkillTree } from "@/components/tutoring/skill-tree";
-import { CopyEmail } from "@/components/tutoring/copy-email";
+import { TrustedCarousel } from "@/app/tutoring/components/trusted-carousel";
+import { SkillTree } from "@/app/tutoring/components/skill-tree";
+import { CopyEmail } from "@/app/tutoring/components/copy-email";
 
 export default function TutoringPage() {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/20">
       {/* Hero Section */}
       <section className="relative flex flex-col items-center justify-center min-h-[50vh] px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background z-0" />
+        <div className="absolute inset-0 bg-linear-to-b from-background via-background/90 to-background z-0" />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
