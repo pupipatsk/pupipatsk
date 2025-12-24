@@ -67,6 +67,24 @@ export default function WorkExperienceSection() {
               May 2025 - July 2025
             </span>
           </div>
+          <div className="space-y-2">
+            <div>
+              <h4 className="font-medium">Article on scbx.com</h4>
+              <ul className="ml-5 my-1 list-disc text-sm text-muted-foreground">
+                <li>
+                  <Link
+                    href="https://www.scbx.com/th/team-and-activity/life-at-scbx-internship/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-4 hover:text-foreground"
+                  >
+                    Life at SCBX Internship: Every Intern Leaves Something That
+                    Matters.
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div className="mt-2 flex flex-wrap gap-2">
             <Badge
               variant="outline"
